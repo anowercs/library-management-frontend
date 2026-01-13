@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/guard.js"></script>
+    <meta charset="UTF-8">
+    <title>Edit Student</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+ 
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Edit Student</h2><br>
+
+    <form id="editStudentForm">
+        <input type="hidden" id="id">
+
+        <div class="form-group">
+            <label>No</label>
+            <input type="text" class="form-control" id="no">
+        </div>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" class="form-control" id="age">
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <select class="form-control" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary">Update</button>
+    </form>
+</div>
+
+<script src="js/studentList.js"></script>
+</body>
+</html>
+

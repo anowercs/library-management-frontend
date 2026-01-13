@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/guard.js"></script>
+    <meta charset="UTF-8">
+    <title>User Register</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .container { width: 500px; margin-top: 100px; }
+        body {
+            background-image: url("img/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        h2 { color: navy; }
+        a, label { color: blue; }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>User register page.</h2><br>
+
+    <form onsubmit="register(event)">
+        <div class="form-group">
+            <label>User Name</label>
+            <input type="text" class="form-control" id="userName" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" id="repeatPassword" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        &nbsp;&nbsp;&nbsp;
+        <a href="login.html">Login</a>
+    </form>
+
+    <p id="msg" style="color:red;margin-top:10px;"></p>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
+

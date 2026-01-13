@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/guard.js"></script>
+    <meta charset="UTF-8">
+    <title>Book Search</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .thumbnail {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container mt-3">
+    <h2>Book Search</h2>
+
+    <div class="input-group mb-3">
+        <input type="text" id="keyword" class="form-control" placeholder="Search by name, remark, description">
+        <button class="btn btn-info" onclick="searchBooks()">Search</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" id="bookContainer"></div>
+</div>
+
+<script src="js/booksearch.js"></script>
+</body>
+</html>

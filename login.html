@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/guard.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Login</title>
+    
+    <!-- Add this new CSS file link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="login-page">
+    <div class="login-container">
+        <div class="logo-section">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm6 9.09c0 4-2.55 7.7-6 8.83-3.45-1.13-6-4.82-6-8.83V6.31l6-2.12 6 2.12v4.78z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+            </div>
+            <h2>Welcome Back</h2>
+            <p>Please login to your account</p>
+        </div>
+
+        <form onsubmit="login(event)">
+            <div class="form-group">
+                <label for="userName">Username</label>
+                <div class="input-wrapper">
+                    <input type="text" id="userName" required autocomplete="username">
+                    <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="password" required autocomplete="current-password">
+                    <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary" id="loginBtn">Login</button>
+
+            <div class="register-link">
+                Don't have an account? <a href="register.html">Register here</a>
+            </div>
+
+            <p id="msg"></p>
+        </form>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/guard.js"></script>
+    <meta charset="UTF-8">
+    <title>Library Login</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .container { width: 500px; margin-top: 100px; }
+        body {
+            background-image: url("img/bacground.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        h2 { color: red; }
+        a, label { color: white; }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>The Library login page.</h2><br>
+
+    <form onsubmit="login(event)">
+        <div class="form-group">
+            <label>User Name</label>
+            <input type="text" class="form-control" id="userName" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        &nbsp;&nbsp;&nbsp;
+        <a href="register.html">Register</a>
+    </form>
+
+    <p id="msg" style="color:red;margin-top:10px;"></p>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
+
+-->

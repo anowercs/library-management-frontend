@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/guard.js"></script>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-4">
+    <h2>Book List</h2>
+
+    <input type="text" id="keyword" placeholder="Search">
+    <button class="btn btn-info" onclick="searchBooks()">Search</button>
+    <button class="btn btn-success" onclick="goAdd()">Add Book</button>
+
+    <table class="table table-bordered mt-3">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Picture</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Remark</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="bookBody"></tbody>
+    </table>
+</div>
+
+<script src="js/book.js"></script>
+</body>
+</html>
+

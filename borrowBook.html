@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/guard.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Select2 CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Borrow Book</title>
+</head>
+<body>
+<div class="container mt-4">
+    <h3>Borrow Book</h3>
+    <div class="mb-3">
+        <label for="bookName">Book</label>
+        <input type="text" id="bookName" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="studentId">Select Student (search by name or number)</label>
+        <select id="studentId" class="form-control" style="width: 100%;">
+            <option value="">Type to search students...</option>
+        </select>
+    </div>
+    <button class="btn btn-success" onclick="borrow()">Confirm Borrow</button>
+</div>
+
+<script src="js/borrowBook.js"></script>
+</body>
+</html>

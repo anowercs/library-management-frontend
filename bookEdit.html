@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/guard.js"></script>
+    <meta charset="UTF-8">
+    <title>Edit Book</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Edit Book</h2><br>
+
+    <form id="editBookForm" enctype="multipart/form-data">
+        <input type="hidden" id="id">
+
+        <div class="form-group">
+            <label>Book Name</label>
+            <input type="text" id="bookName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select id="categoryId" class="form-control" required></select>
+        </div>
+
+        <div class="form-group">
+            <label>Current Image</label><br>
+            <img id="currentImage"
+                src=""
+                style="width:80px; height:auto; border:1px solid #ccc; padding:3px;">
+        </div>
+
+        <div class="form-group">
+            <label>New Image (optional)</label>
+            <input type="file" id="file" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea id="description" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Remark</label>
+            <input type="text" id="remark" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+
+<script src="js/book.js"></script>
+</body>
+</html>
+

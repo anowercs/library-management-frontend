@@ -1,0 +1,180 @@
+html,body {
+	background: #fafafa;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 4px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: rgba(57, 74, 89, 0.7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: rgba(57, 74, 89, 1);
+}
+
+#table {
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+#table table {
+	font-size: 14px;
+}
+
+#table table thead {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#table table a {
+	color: black;
+	text-decoration: none;
+}
+
+.action-bar {
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.box {
+	width: 100%;
+	height: 100%;
+}
+
+.label {
+	position: absolute;
+	top: 0px;
+	left: 10%;
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	color: gray;
+	text-align: left;
+	border-bottom: 1px solid gray;
+}
+
+.label span {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+}
+
+.label .right {
+	text-align: right;
+}
+
+.label span button {
+	height: 32px;
+	margin: 9px auto;
+}
+
+.footBox {
+	width: 100%;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.foot {
+	width: 220px;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-direction: row;
+}
+
+.foot li {
+	list-style: none;
+}
+
+.foot a {
+	list-style: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.foot .prev {
+	width: 60px;
+	background: lightgray;
+	line-height: 30px;
+	text-align: center;
+}
+
+.foot .center {
+	width: 100px;
+	text-align: center;
+	border: 1px solid lightgray;
+}
+
+.foot .next {
+	width: 60px;
+	background: lightgray;
+	line-height: 30px;
+	text-align: center;
+}
+
+.panelBox {
+	width: 100%;
+	border: 1px gray solid;
+	margin-top: 20px;
+	background: white;
+}
+
+.panelBox .title {
+	height: 40px;
+	background: rgb(233, 234, 230);
+}
+
+.form {
+	margin: 20px;
+	width: 80%;
+	font-weight: normal;
+}
+
+.form label {
+	font-weight: normal;
+}
+#serachBar{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin-bottom:5px;
+	margin-top: 5px;
+}
+#serachBar form{
+	display: block;
+	float: left;
+	position: absolute;
+	float:left;
+}
+#serachBar .right{
+	position: absolute;
+	float:left;
+	top:5px;
+	right: 0px;
+}
+#serachBar .right a{
+	display: block;
+	float:left;
+	margin-right: 10px;
+}
+
