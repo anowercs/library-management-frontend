@@ -137,10 +137,6 @@ returnBtn.addEventListener("click", async () => {
     window.location.href = "bookSearch.html";
 });
 
-
-
-
-
 /* =========================
    3️⃣ Load Borrowed Books
    ========================= */
