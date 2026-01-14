@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return Borrowed Book</title>
+
+    <script src="js/guard.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h3>Return Borrowed Book</h3>
+    <hr>
+
+    <!-- Search Student -->
+    <div class="mb-3">
+        <label>Search Student No</label>
+        <input type="text" id="studentSearch" class="form-control"
+               placeholder="Enter Student No">
+    </div>
+
+    <!-- Student Info -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label>Student Name</label>
+            <input type="text" id="studentName" class="form-control" readonly>
+        </div>
+        <div class="col-md-6">
+            <label>Borrower ID</label>
+            <input type="text" id="borrowerId" class="form-control" readonly>
+        </div>
+    </div>
+
+    <!-- Category -->
+    <div class="mb-3">
+        <label>Choose Category</label>
+        <select id="categorySelect" class="form-control">
+            <option value="">-- Select Category --</option>
+        </select>
+    </div>
+
+    <!-- Borrowed Book -->
+    <div class="mb-3">
+        <label>Choose Borrowed Book</label>
+        <select id="borrowSelect" class="form-control">
+            <option value="">-- Select Borrowed Book --</option>
+        </select>
+    </div>
+
+    <!-- Dates -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label>Borrow Date</label>
+            <input type="text" id="borrowDate" class="form-control" readonly>
+        </div>
+        <div class="col-md-6">
+            <label>Return Date</label>
+            <input type="date" id="returnDate" class="form-control">
+        </div>
+    </div>
+
+    <!-- Return Button -->
+    <button class="btn btn-danger" id="returnBtn">Return Book</button>
+</div>
+
+<script src="js/returnBorrowedBook.js"></script>
+</body>
+</html>

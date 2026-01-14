@@ -35,7 +35,7 @@ function loadCategories(select) {
 
 function loadBooks() {
     const tbody = document.getElementById("bookBody");
-    if (!tbody) return; // 🔴 ONLY list page
+    if (!tbody) return; 
 
     fetch(`${API_BASE}/books`, {
         headers: { Authorization: "Bearer " + token }
