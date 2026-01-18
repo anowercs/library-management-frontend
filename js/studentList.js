@@ -193,7 +193,7 @@ function loadStudents(keyword = "") {
 }
 
 /* ======================
-   DELETE / NAVIGATION
+   DELETE
 ====================== */
 function del(id) {
     if (!confirm("Delete this student?")) return;
@@ -202,7 +202,24 @@ function del(id) {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` }
     })
-        .then(() => loadStudents());
+    .then(res => res.json().then(data => ({ status: res.status, body: data })))
+    .then(({ status, body }) => {
+        if (status === 200 || status === 204) {
+            // Success - load the studentList.html page
+            alert(body.message || "Student deleted successfully");
+            window.location.href = "studentList.html";
+        } else if (status === 409) {
+            // Conflict - student has active borrows
+            alert("❌ " + body.error);
+        } else {
+            // Other error
+            alert("Error: " + (body.message || body.error || "Failed to delete"));
+        }
+    })
+    .catch(err => {
+        console.error("Delete error:", err);
+        alert("Network error: " + err.message);
+    });
 }
 
 function edit(id) {
