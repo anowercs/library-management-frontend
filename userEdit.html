@@ -15,6 +15,14 @@
             background-attachment: fixed;
             background-position: center;
         }
+        .read-only-display {
+            background-color: #f5f5f5;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            color: #666;
+        }
     </style>
 </head>
 
@@ -23,24 +31,44 @@
 <div class="container">
     <h2>Edit User</h2><br>
 
-    <form id="editUserForm">
+    <form id="editUserForm" onsubmit="updateUser(event)">
         <input type="hidden" id="id">
 
+        <!-- Current ID (Read-only) -->
         <div class="form-group">
-            <label>User Name</label>
-            <input type="text" class="form-control" id="userName">
+            <label>ID</label>
+            <div class="read-only-display" id="currentId"></div>
         </div>
 
+        <!-- Current Username (Read-only) -->
         <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" id="password">
+            <label>Current Username</label>
+            <div class="read-only-display" id="currentUserName"></div>
         </div>
 
-        <button class="btn btn-primary">Update</button>
+        <!-- New Username -->
+        <div class="form-group">
+            <label>New Username</label>
+            <input type="text" class="form-control" id="newUserName" required>
+        </div>
+
+        <!-- Current Password -->
+        <div class="form-group">
+            <label>Current Password</label>
+            <input type="password" class="form-control" id="currentPassword" required>
+        </div>
+
+        <!-- New Password -->
+        <div class="form-group">
+            <label>New Password</label>
+            <input type="password" class="form-control" id="newPassword" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update User</button>
+        <a href="userList.html" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
 
 <script src="js/user.js"></script>
 </body>
 </html>
-
